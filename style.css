@@ -176,14 +176,15 @@ div.bar .content ul li{
   padding: 0 15px;
   justify-content: center;
   position: relative;
+  cursor: pointer;
   
 }
-div.bar .content ul li:hover{
+div.bar .content ul li.active{
   border-bottom: 1px solid #00acee;
   padding-top: 1px;
 }
 
-div.bar .content ul li:hover strong{
+div.bar .content ul li.active strong{
   color: #00acee;
 }
 
@@ -449,3 +450,102 @@ div.wrapper-content aside.widgets div.follow ul li a{
   text-decoration: none;
   color: #9a9a9a;
 }
+
+div.wrapper-content section.timeline{
+  background: #fff;
+  margin: 10px 0 0 10px;
+}
+
+div.wrapper-content section.timeline nav{
+  border-bottom: 1px solid #ccd6cc;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a{
+  text-decoration: none;
+  color: #00acee;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child{
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.twitts {
+  list-style: none;
+}
+
+
+div.wrapper-content .timeline ul.twitts li {
+  display: flex;
+  border-bottom: 1px solid #ccd6cc;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline ul.twitts li > img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+} 
+
+div.wrapper-content .timeline ul.twitts li div.info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+div.wrapper-content .timeline ul.twitts li div.info strong {
+  font-size: 16px;
+}
+
+div.wrapper-content .timeline ul.twitts li div.info strong span{
+  color: #9a9a9a;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+
+
+div.wrapper-content .timeline ul.twitts li div.info p{
+  margin: 5px 0 15px;
+}
+
+
+div.wrapper-content .timeline ul.twitts li div.info .actions{
+  display: flex;
+}
+
+
+
+div.wrapper-content .timeline ul.twitts li div.info div.actions a{
+  display: flex;
+  align-items: center;
+  color: #667580;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 15px;  
+}
+
+div.wrapper-content .timeline ul.twitts li div.info div.actions a:first-child{
+  margin-left: 0;
+} 
+
+div.wrapper-content .timeline ul.twitts li div.info div.actions a img{
+ margin-right: 5px;
+} 
+
+
+div.wrapper-content .timeline ul.twitts li img.image{
+  max-width: 500px;
+  max-height: 500px;
+ } 
+
+ @media (max-width: 1000px){
+  div.wrapper-content aside.widgets{
+    display: none;
+    
+  }
+
+ }
